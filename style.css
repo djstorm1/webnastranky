@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #fff;
+  }
+  
+  /* Úvodní sekce */
+  .intro {
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .intro-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .intro-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  .scroll-btn {
+    font-size: 2rem;
+    color: crimson;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .scroll-btn:hover {
+    transform: translateY(5px);
+    color: #ff4d4d;
+  }
+  
+  /* Sekce témat */
+  .topics {
+    padding: 4rem 2rem;
+  }
+  
+  .topics h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #ff4d4d;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: linear-gradient(135deg, #2a2a2a, #3a1a1a);
+    box-shadow: 0 8px 20px rgba(255,0,0,0.3);
+  }
+  
