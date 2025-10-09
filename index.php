@@ -7,12 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Úvodní sekce -->
+  
+
+  
+  
   <header class="intro">
+ 
     <div class="intro-content">
       <h1>Události 2. světové války</h1>
       <p>Objev 29 klíčových momentů, které změnily svět</p>
-      <a  class="scroll-btn">↓</a>
+      <a href="#temata" class="scroll-btn">↓</a>
     </div>
   </header>
 
@@ -20,8 +24,8 @@
   <section id="temata" class="topics">
     <h2>Vyber téma</h2>
     <div class="cards">
-      <a href="tema1.html" class="card">1. Hirošima a Nagasaki</a>
-      <a href="tema2.html" class="card">2. Operace Anthropoid</a>
+      <a href="tema1.html"  class="card">1. Hirošima a Nagasaki <img src="hirosima.jpg" alt="hirosima"></a>
+      <a href="tema2.html" class="card">2. Operace Anthropoid<img src="operaceAnth.jpg" alt="hirosima"></a>
       <a href="tema3.html" class="card">3. Vylodění v Normandii</a>
       <a href="tema4.html" class="card">4. Nicholas Winton</a>
       <a href="tema5.html" class="card">5. Osvětim</a>

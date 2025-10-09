@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +11,14 @@
   
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: #121212;
+    background: #1a1a1a;
     color: #fff;
   }
   
-  /* Úvodní sekce */
+  
   .intro {
     height: 100vh;
-    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+    background-image: url(bacground.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,9 @@
   }
   
   .intro-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
+    font-size: 70px;
+    margin-bottom: 16px;
+    letter-spacing: 30px;
   }
   
   .intro-content p {
@@ -39,26 +39,26 @@
   }
   
   .scroll-btn {
-    font-size: 2rem;
+    font-size: 160px;
     color: crimson;
     text-decoration: none;
     transition: 0.3s;
   }
-  
+    
   .scroll-btn:hover {
     transform: translateY(5px);
-    color: #ff4d4d;
+    color: #ff0000;
   }
   
-  /* Sekce témat */
+
   .topics {
-    padding: 4rem 2rem;
+    padding: 60px 40px;
   }
   
   .topics h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 50px;
+    margin-bottom: 50px;
     color: #ff4d4d;
   }
   
@@ -70,7 +70,7 @@
   
   .card {
     background: #1e1e1e;
-    padding: 1.5rem;
+    padding: 22px;
     border-radius: 15px;
     text-align: center;
     color: #fff;
@@ -78,10 +78,81 @@
     text-decoration: none;
     transition: 0.3s;
   }
-  
+
+  .card img{
+    width: 200px;
+    height: 150 px;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+
+
   .card:hover {
     transform: translateY(-8px) scale(1.05);
     background: linear-gradient(135deg, #2a2a2a, #3a1a1a);
     box-shadow: 0 8px 20px rgba(255,0,0,0.3);
   }
+  ¨
+  @media (max-width: 1024px) {
+    .intro-content h1 {
+      font-size: 50px;
+      letter-spacing: 15px;
+    }
   
+    .scroll-btn {
+      font-size: 100px;
+    }
+  
+    .topics h2 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .intro-content h1 {
+      font-size: 35px;
+      letter-spacing: 5px;
+    }
+  
+    .intro-content p {
+      font-size: 1.2rem;
+    }
+  
+    .scroll-btn {
+      font-size: 60px;
+    }
+  
+    .topics {
+      padding: 40px 20px;
+    }
+  
+    .topics h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  
+    .cards {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro-content h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+  
+    .intro-content p {
+      font-size: 1rem;
+    }
+  
+    .scroll-btn {
+      font-size: 50px;
+    }
+  
+    .topics h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
