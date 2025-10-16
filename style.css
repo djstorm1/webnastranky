@@ -72,19 +72,24 @@
     background: #1e1e1e;
     padding: 22px;
     border-radius: 15px;
-    text-align: center;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-
-  .card img{
-    width: 200px;
-    height: 150 px;
+  
+  .card img {
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
     border-radius: 10px;
-    margin-top: 10px;
     object-fit: cover;
+    margin-top: 10px;
   }
 
 
@@ -94,65 +99,94 @@
     box-shadow: 0 8px 20px rgba(255,0,0,0.3);
   }
   ¨
-  @media (max-width: 1024px) {
-    .intro-content h1 {
-      font-size: 50px;
-      letter-spacing: 15px;
-    }
   
-    .scroll-btn {
-      font-size: 100px;
-    }
-  
-    .topics h2 {
-      font-size: 40px;
-    }
+
+@media (max-width: 1024px) {
+  .intro-content h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .intro-content h1 {
-      font-size: 35px;
-      letter-spacing: 5px;
-    }
-  
-    .intro-content p {
-      font-size: 1.2rem;
-    }
-  
-    .scroll-btn {
-      font-size: 60px;
-    }
-  
-    .topics {
-      padding: 40px 20px;
-    }
-  
-    .topics h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-  
-    .cards {
-      gap: 15px;
-    }
+
+  .scroll-btn {
+    font-size: 100px;
   }
-  
-  @media (max-width: 480px) {
-    .intro-content h1 {
-      font-size: 28px;
-      letter-spacing: 2px;
-    }
-  
-    .intro-content p {
-      font-size: 1rem;
-    }
-  
-    .scroll-btn {
-      font-size: 50px;
-    }
-  
-    .topics h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
+
+  .topics h2 {
+    font-size: 40px;
   }
+
+  .card img {
+    max-width: 180px;
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .intro-content h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+  }
+
+  .intro-content p {
+    font-size: 1.2rem;
+  }
+
+  .scroll-btn {
+    font-size: 70px;
+  }
+
+  .topics {
+    padding: 30px 15px;
+  }
+
+  .topics h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .card img {
+    max-width: 160px;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .intro-content h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .intro-content p {
+    font-size: 1rem;
+  }
+
+  .scroll-btn {
+    font-size: 50px;
+  }
+
+  .topics h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    max-width: 140px;
+    height: 180px;
+  }
+}
